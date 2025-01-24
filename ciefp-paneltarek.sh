@@ -2,10 +2,10 @@
 ##setup command=wget -q "--no-check-certificate" https://raw.githubusercontent.com/tarekzoka/Addonspanel/main/ciefp-paneltarek.sh -O - | /bin/sh
 
 ######### Only This line to edit with new version ######
-version='5.0'
+version='0.0'
 ##############################################################
 
-TMPPATH=/tmp/MagicPanel
+TMPPATH=/tmp/SmartAddonspanel
 
 if [ ! -d /usr/lib64 ]; then
 	PLUGINPATH=/usr/lib/enigma2/python/Plugins/Extensions/SmartAddonspanel
@@ -76,9 +76,16 @@ else
    echo ""
    echo ""
 fi
-   wget https://raw.githubusercontent.com/tarekzoka/Addonspanel/main/SmartAddonspanel.tar.gz
+   wget https://raw.githubusercontent.com/tarekzoka/Addonspanel/main/py3/SmartAddonspanel.tar.gz
    tar -xzf SmartAddonspanel.tar.gz
-   cp -r 'MagicPanel-main/usr' '/'
+   cp -r 'SmartAddonspane/usr' '/'
+set +e
+cd
+sleep 2
+fi 
+   wget https://raw.githubusercontent.com/tarekzoka/Addonspanel/main/py2/SmartAddonspanel.tar.gz
+   tar -xzf SmartAddonspanel.tar.gz
+   cp -r 'SmartAddonspane/usr' '/'
 set +e
 cd
 sleep 2
