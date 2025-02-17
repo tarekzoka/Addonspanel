@@ -6,8 +6,8 @@
 ###########################################
 
 # My config script #
-MY_TAR_PY2="MultiCamAdder_py2.tar.gz"
-MY_TAR_PY3="MultiCamAdder_py3.tar.gz"
+MY_TAR_PY2="SmartAddonspanel.tar.gz"
+MY_TAR_PY3="SmartAddonspanel.tar.gz"
 MY_URL="https://raw.githubusercontent.com/tarekzoka/Addonspanel/main/py3"
 MY_URL="https://raw.githubusercontent.com/tarekzoka/Addonspanel/main/py2"
 PYTHON_VERSION=$(python -c 'import sys; print(sys.version_info[0])')
